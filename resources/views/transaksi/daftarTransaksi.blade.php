@@ -18,10 +18,11 @@
                      <table class="table-auto w-full mt-4 border border-collapse">
                          <thead>
                              <tr>
-                                 <th class="px-4 py-2 border">Nama Kendaraan</th>
-                                 <th class="px-4 py-2 border">Type</th>
-                                 <th class="px-4 py-2 border">License</th>
-                                 <th class="px-4 py-2 border">Daily Price</th>
+                                 <th class="px-4 py-2 border">User Id</th>
+                                 <th class="px-4 py-2 border">Vehicle Id</th>
+                                 <th class="px-4 py-2 border">Start Date</th>
+                                 <th class="px-4 py-2 border">End Date</th>
+                                 <th class="px-4 py-2 border">Price</th>
                                  <th class="px-4 py-2 border">Status</th>
                                  <th class="px-4 py-2 border">Action</th>
                              </tr>
@@ -36,10 +37,11 @@
                              @endphp --}}
                              @foreach($transactions as $transaction)
                                  <tr>
-                                     <td class="px-4 py-2 border">{{ $transaction->name }}</td>
-                                     <td class="px-4 py-2 border">{{ $transaction->typeId }}</td>
-                                     <td class="px-4 py-2 border">{{ $transaction->license }}</td>
-                                     <td class="px-4 py-2 border">{{ $transaction->dailyPrice }}</td>
+                                     <td class="px-4 py-2 border">{{ $transaction->userId }}</td>
+                                     <td class="px-4 py-2 border">{{ $transaction->vehicleId }}</td>
+                                     <td class="px-4 py-2 border">{{ $transaction->startDate }}</td>
+                                     <td class="px-4 py-2 border">{{ $transaction->endDate }}</td>
+                                     <td class="px-4 py-2 border">{{ $transaction->price }}</td>
                                      <td class="px-4 py-2 border">{{ $transaction->status }}</td>
                                      {{-- <td class="px-4 py-2 border">{{ $jenisKoleksiLabels[$collection->jenisKoleksi] }}</td> --}}
                                      {{-- <td class="px-4 py-2 border">{{ $vehicle->jumlahKoleksi }}</td> --}}
